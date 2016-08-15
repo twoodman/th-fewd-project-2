@@ -65,7 +65,7 @@ nav ul li {
     padding: 12px;
     margin: 0 0 5px 0;
     background: #ffffff;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1em;
 }
 /**********************
@@ -92,7 +92,7 @@ PORTFOLIO && GRID
 }
 #portfolio h1 {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 40px;
 }
 .grid {
@@ -102,6 +102,7 @@ PORTFOLIO && GRID
 }
 .cell {
     width: 100%;
+    margin-bottom: 10px;
 }
 .cell img {
     width: 100%;
@@ -114,5 +115,47 @@ PORTFOLIO && GRID
 .cell p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.95em;
+}
+/**********************
+FOOTER
+***********************/
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 15px 50px 15px;
+    position: relative;
+}
+footer h1 {
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+footer p {
+    font-family: 'Open Sans', sans-serif;
+}
+footer span {
+    font-weight: 700;
+}
+.footerkill {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 0.75em;
+    line-height: 2.5em;
+}
+.footerkill p {
+    padding: 0 15px 0 15px;
+}
+.footerkill p:last-child {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.7px;
 }

@@ -20,6 +20,10 @@ body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+a {
+    text-decoration: none;
+    color: #373737;
+}
 /**********************
 SITE WRAPPER
 ***********************/
@@ -125,6 +129,7 @@ footer {
     margin-top: 20px;
     padding: 0 15px 50px 15px;
     position: relative;
+    background: #fafafa;
 }
 footer h1 {
     font-weight: 700;

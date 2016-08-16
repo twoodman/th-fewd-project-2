@@ -94,7 +94,7 @@ PORTFOLIO && GRID
     padding: 40px 15px 0 15px;
     margin-bottom: 0;
 }
-#portfolio h1 {
+#portfolio h2 {
     font-weight: 700;
     font-size: 1em;
     margin-bottom: 40px;
@@ -136,7 +136,7 @@ SKILLS
     background: #853847;
     margin-top: 0;
 }
-#skills h1 {
+#skills h2 {
     font-weight: 700;
     font-size: 1em;
     margin-bottom: 40px;
@@ -159,7 +159,7 @@ footer {
     flex-wrap: nowrap;
     flex-direction: column;
 }
-footer h1 {
+footer h2 {
     font-weight: 700;
     font-size: 1.1em;
     margin-bottom: 40px;
@@ -228,9 +228,12 @@ MIN 768
         margin-bottom: 2.5em;
     }
     #topnav ul li {
+        background: #fafafa;
+    }
+    #topnav ul li a {
         width: 10%;
         margin: 0 5px 0 5px;
-        background: none;
+        background: #fafafa;
     }
     /**********************
     HERO
@@ -254,7 +257,7 @@ MIN 768
     /**********************
     PORTFOLIO && GRID
     ***********************/
-    #portfolio h1 {
+    #portfolio h2 {
         font-weight: 700;
         font-size: 1em;
         margin-bottom: 40px;
@@ -284,7 +287,7 @@ MIN 768
         padding: 40px 30px 40px 30px;
         margin-top: 0;
     }
-    #skills h1 {
+    #skills h2 {
         font-weight: 700;
         font-size: 1em;
         margin-bottom: 80px;
@@ -305,7 +308,7 @@ MIN 768
         text-align: center;
         padding: 0 30px 0 30px;
     }
-    footer h1 {
+    footer h2 {
         font-weight: 700;
         font-size: 1em;
         margin-bottom: 40px;
@@ -348,6 +351,10 @@ MIN 768
         line-height: 1.5em;
         font-size: 1.1em;
     }
+    #footernav ul li a {
+        width: 10%;
+        margin: 0 5px 0 5px;
+    }
 }
 /**********************
 MIN 1024
@@ -383,7 +390,7 @@ MIN 1024
     /**********************
     PORTFOLIO && GRID
     ***********************/
-    #portfolio h1 {
+    #portfolio h2 {
         font-weight: 700;
         font-size: 1em;
         margin-bottom: 40px;
@@ -408,7 +415,7 @@ MIN 1024
     /**********************
     SKILLS
     ***********************/
-    #skills h1 {
+    #skills h2 {
         font-weight: 700;
         font-size: 1em;
         margin-bottom: 80px;

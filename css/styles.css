@@ -59,6 +59,7 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
+    margin: 0;
 }
 nav ul li {
     width: 100%;
@@ -90,6 +91,7 @@ PORTFOLIO && GRID
     min-height: 100vh;
     text-align: center;
     padding: 40px 15px 0 15px;
+    margin-bottom: 0;
 }
 #portfolio h1 {
     font-weight: 700;
@@ -105,6 +107,9 @@ PORTFOLIO && GRID
     width: 100%;
     margin-bottom: 20px;
 }
+.cell:last-child {
+    margin-bottom: 50px;
+}
 .cell img {
     width: 100%;
 }
@@ -117,6 +122,29 @@ PORTFOLIO && GRID
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.95em;
+}
+/**********************
+SKILLS
+***********************/
+#skills {
+    color: #f4f4f4;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 15px 0 15px;
+    background: #853847;
+    margin-top: 0;
+}
+#skills h1 {
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+#skills ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
 }
 /**********************
 FOOTER

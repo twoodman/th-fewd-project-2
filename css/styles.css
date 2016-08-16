@@ -55,9 +55,6 @@ nav a {
     text-decoration: none;
     color: #373737;
 }
-nav a:hover li {
-    background: #f1f1f1;
-}
 nav ul {
     list-style: none;
     text-align: center;
@@ -106,7 +103,7 @@ PORTFOLIO && GRID
 }
 .cell {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .cell img {
     width: 100%;

@@ -39,7 +39,7 @@ SITE WRAPPER
 HEADER
 ***********************/
 header {
-    min-height: 100vh;
+    min-height: 400px;
     text-align: center;
     background-color: #fafafa;
     padding: 15px 15px 0 15px;
@@ -69,6 +69,7 @@ header h1 {
     background: #ffffff;
     font-weight: 700;
     line-height: 1em;
+    font-size: 0.9em;
 }
 /**********************
 HERO
@@ -129,9 +130,9 @@ SKILLS
 #skills {
     color: #f4f4f4;
     width: 100%;
-    min-height: 100vh;
+    min-height: 400px;
     text-align: center;
-    padding: 40px 15px 0 15px;
+    padding: 40px 15px 40px 15px;
     background: #853847;
     margin-top: 0;
 }
@@ -150,26 +151,27 @@ FOOTER
 ***********************/
 footer {
     text-align: center;
-    padding: 20px 15px 50px 15px;
+    padding: 20px 15px 10px 15px;
     position: relative;
     background: #fafafa;
-    min-height: 100vh;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 footer h1 {
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 40px;
 }
 footer p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
 }
 footer span {
     font-weight: 700;
 }
-.footerkill {
-    position: absolute;
-    bottom:0;
-    left: 0;
+.footerclose {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -180,10 +182,10 @@ footer span {
     font-size: 0.75em;
     line-height: 2.5em;
 }
-.footerkill p {
+.footerclose p {
     padding: 0 15px 0 15px;
 }
-.footerkill p:last-child {
+.footerclose p:last-child {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     letter-spacing: -0.7px;
@@ -191,17 +193,22 @@ footer span {
 /**********************
 MEDIA QUERIES
 ***********************/
-@media (max-width: 767px) {
+/**********************
+MAX 767
+***********************/
+@media (max-width: 766px) {
     #footernav {
         display: none;
     }
 }
-@media (min-width: 768px) {
+/**********************
+MIN 768
+***********************/
+@media (min-width: 767px) {
     /**********************
     HEADER
     ***********************/
     header {
-        min-height: 100vh;
         text-align: center;
         background-color: #fafafa;
         padding: 30px 30px 0 30px;
@@ -274,7 +281,7 @@ MEDIA QUERIES
     ***********************/
     #skills {
         text-align: center;
-        padding: 40px 30px 0 30px;
+        padding: 40px 30px 40px 30px;
         margin-top: 0;
     }
     #skills h1 {
@@ -296,7 +303,7 @@ MEDIA QUERIES
     ***********************/
     footer {
         text-align: center;
-        padding: 0 30px 110px 30px;
+        padding: 0 30px 0 30px;
     }
     footer h1 {
         font-weight: 700;
@@ -314,13 +321,17 @@ MEDIA QUERIES
         margin: 80px auto 0 auto;
         width: 75%;
     }
-    .footerkill {
-        padding: 0 30px 150px 30px;
+    .footerclose {
+        padding: 0 30px 0 30px;
+        bottom: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
-    #contact .footerkill p {
+    #contact .footerclose p {
         padding-left: 0;
     }
-    .footerkill p:last-child {
+    .footerclose p:last-child {
         display: none;
     }
     #footernav ul {
@@ -336,5 +347,104 @@ MEDIA QUERIES
         height: 40px;
         padding: 10px 0px 10px 10px;
         line-height: 1.5em;
+        font-size: 1.1em;
+    }
+}
+/**********************
+MIN 1024
+***********************/
+@media (min-width: 1023px) {
+    /**********************
+    HEADER
+    ***********************/
+    .navwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    header {
+        min-height: 450px;
+    }
+    /**********************
+    HERO
+    ***********************/
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    .hero p {
+        padding-right: 25px;
+    }
+    .hero img {
+        min-width: 45%;
+    }
+    /**********************
+    PORTFOLIO && GRID
+    ***********************/
+    #portfolio h1 {
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cell {
+        width: 30%;
+    }
+    .cell img {
+        width: 100%;
+    }
+    .cell h2 {
+        font-size: 1.1em;
+    }
+    .cell p {
+        font-size: 0.95em;
+    }
+    /**********************
+    SKILLS
+    ***********************/
+    #skills h1 {
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 80px;
+    }
+    #skills ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #skills ul li {
+        line-height: 2em;
+    }
+    /**********************
+    FOOTER
+    ***********************/
+    .footerclose {
+        bottom: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    #footernav ul {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+    #footernav ul li {
+        width: 100%;
+        height: 40px;
+        padding: 10px 0px 10px 10px;
+        line-height: 1.5em;
+        font-size: 1.1em;
     }
 }

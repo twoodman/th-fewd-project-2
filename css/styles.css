@@ -15,7 +15,7 @@ html, body {
 }
 body {
     color: #373737;
-    background-color: #ffffff;
+    background-color: #424242;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -34,26 +34,29 @@ SITE WRAPPER
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
+    color: #f4f4f4;
 }
 /**********************
 HEADER
 ***********************/
-header {
-    min-height: 400px;
+#home {
+    min-height: 500px;
     text-align: center;
-    background-color: #fafafa;
-    padding: 15px 15px 0 15px;
+    background-color: #848484;
+    padding: 15px 15px 100px 15px;
 }
-header h1 {
+#home h1 {
     margin-top: 0;
     font-weight: 700;
+    color: #373737;
 }
 #topnav {
     text-align: center;
 }
 #topnav a {
+    padding: 15px;
     text-decoration: none;
-    color: #373737;
+    color: #f4f4f4;
 }
 #topnav ul {
     list-style: none;
@@ -66,7 +69,7 @@ header h1 {
     height: 40px;
     padding: 12px;
     margin: 0 0 5px 0;
-    background: #ffffff;
+    background-color: #373737;
     font-weight: 700;
     line-height: 1em;
     font-size: 0.9em;
@@ -77,12 +80,15 @@ HERO
 .hero {
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
 }
 .hero p {
     line-height: 1.5em;
 }
 .hero img {
     width: 60%;
+    margin-top: 25px;
+    box-shadow: -2px 2px 5px #373737;
 }
 /**********************
 PORTFOLIO && GRID
@@ -133,7 +139,7 @@ SKILLS
     min-height: 400px;
     text-align: center;
     padding: 40px 15px 40px 15px;
-    background: #853847;
+    background: #212121;
     margin-top: 0;
 }
 #skills h2 {
@@ -153,7 +159,7 @@ footer {
     text-align: center;
     padding: 20px 15px 10px 15px;
     position: relative;
-    background: #fafafa;
+    background: #848484;
     min-height: 400px;
     display: flex;
     flex-wrap: nowrap;
@@ -185,7 +191,17 @@ footer span {
 .footerclose p {
     padding: 0;
 }
-.footerclose p:last-child {
+.footerclose a {
+    padding: 15px;
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: all 300ms ease-out;
+}
+.footerclose a:hover {
+    border-bottom: 2px solid #1a1f2b;
+}
+.footerclose a p {
+    color: #f4f4f4;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     letter-spacing: -0.7px;
@@ -208,14 +224,13 @@ MIN 768
     /**********************
     HEADER
     ***********************/
-    header {
+    #home {
         text-align: center;
-        background-color: #fafafa;
         padding: 30px 30px 0 30px;
     }
-    header h1 {
+    #home h1 {
         margin-top: 0;
-        font-size: 1.6em;
+        font-size: 1.8em;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -227,13 +242,19 @@ MIN 768
         align-items: center;
         margin-bottom: 2.5em;
     }
+    #topnav a {
+        transition: all 300ms ease-out;
+    }
+    #topnav a:hover {
+        border-bottom: 2px solid #1a1f2b;
+    }
     #topnav ul li {
-        background: #fafafa;
+        background-color: #848484;
     }
     #topnav ul li a {
         width: 10%;
         margin: 0 5px 0 5px;
-        background: #fafafa;
+        background-color: #848484;
     }
     /**********************
     HERO
@@ -250,8 +271,10 @@ MIN 768
         line-height: 1.35em;
         text-align: left;
         margin: 0;
+        margin-right: 5px;
     }
     .hero img {
+        margin-top: 0;
         width: 42%;
     }
     /**********************
@@ -354,6 +377,7 @@ MIN 768
     #footernav ul li a {
         width: 10%;
         margin: 0 5px 0 5px;
+        color: #f4f4f4;
     }
 }
 /**********************
@@ -458,7 +482,13 @@ MIN 1024
 MIN 1300
 ***********************/
 @media (min-width: 1300px) {
+    .hero {
+        display: flex;
+        align-items: center;
+    }
     .hero p {
-        width: 25%;
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
     }
 }

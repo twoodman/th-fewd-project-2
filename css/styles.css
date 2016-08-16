@@ -48,20 +48,20 @@ header h1 {
     margin-top: 0;
     font-weight: 700;
 }
-nav {
+#topnav {
     text-align: center;
 }
-nav a {
+#topnav a {
     text-decoration: none;
     color: #373737;
 }
-nav ul {
+#topnav ul {
     list-style: none;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-nav ul li {
+#topnav ul li {
     width: 100%;
     height: 40px;
     padding: 12px;
@@ -81,7 +81,7 @@ HERO
     line-height: 1.5em;
 }
 .hero img {
-    max-width: 60%;
+    width: 60%;
 }
 /**********************
 PORTFOLIO && GRID
@@ -139,7 +139,6 @@ SKILLS
     font-weight: 700;
     font-size: 1em;
     margin-bottom: 40px;
-    padding-top: 40px;
 }
 #skills ul {
     text-align: left;
@@ -190,8 +189,13 @@ footer span {
     letter-spacing: -0.7px;
 }
 /**********************
-FOOTER
+MEDIA QUERIES
 ***********************/
+@media (max-width: 767px) {
+    #footernav {
+        display: none;
+    }
+}
 @media (min-width: 768px) {
     /**********************
     HEADER
@@ -200,14 +204,15 @@ FOOTER
         min-height: 100vh;
         text-align: center;
         background-color: #fafafa;
-        padding: 15px 15px 0 15px;
+        padding: 30px 30px 0 30px;
     }
     header h1 {
         margin-top: 0;
+        font-size: 1.6em;
         font-weight: 700;
         margin-bottom: 10px;
     }
-    nav ul {
+    #topnav ul {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -215,7 +220,7 @@ FOOTER
         align-items: center;
         margin-bottom: 2.5em;
     }
-    nav ul li {
+    #topnav ul li {
         width: 10%;
         margin: 0 5px 0 5px;
         background: none;
@@ -227,12 +232,111 @@ FOOTER
         width: 100%;
         text-align: center;
         display: flex;
-        justify-content: ;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: flex-start;
     }
     .hero p {
-        line-height: 1.5em;
+        line-height: 1.35em;
+        text-align: left;
+        margin: 0;
     }
     .hero img {
-        max-width: 60%;
+        width: 42%;
+    }
+    /**********************
+    PORTFOLIO && GRID
+    ***********************/
+    #portfolio h1 {
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cell {
+        width: 46%;
+    }
+    .cell img {
+        width: 100%;
+    }
+    .cell h2 {
+        font-size: 1.1em;
+    }
+    .cell p {
+        font-size: 0.95em;
+    }
+    /**********************
+    SKILLS
+    ***********************/
+    #skills {
+        color: #f4f4f4;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        padding: 40px 30px 0 30px;
+        background: #853847;
+        margin-top: 0;
+    }
+    #skills h1 {
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 80px;
+    }
+    #skills ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #skills ul li {
+        line-height: 2em;
+    }
+    /**********************
+    FOOTER
+    ***********************/
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 30px 50px 30px;
+    }
+    footer h1 {
+        font-weight: 700;
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    footer p {
+        font-family: 'Open Sans', sans-serif;
+    }
+    footer span {
+        font-weight: 700;
+    }
+    .footerkill {
+        padding: 0 30px 0 30px;
+    }
+    .footerkill p {
+        padding-left: 0;
+        padding: 0 25px 0 25px;
+    }
+    .footerkill p:last-child {
+        display: none;
+    }
+    #footernav ul {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+    #footernav ul li {
+        width: 100%;
+        height: 40px;
+        padding: 10px 0 10px 10px;
+        margin: 10px;
+        line-height: 1.5em;
     }
 }

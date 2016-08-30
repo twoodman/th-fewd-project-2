@@ -1,4 +1,13 @@
-#### project 2 for treehouse fewd course
+#### Project 2 for Treehouse FEWD Course
 ----
 
-a responsive portfolio page layout
+A responsive portfolio page layout
+
+
+To Run:
+- Download or clone repo
+- Open index.html in browser
+
+
+Or:
+- http://twoodman.github.io/th-fewd-project-2
